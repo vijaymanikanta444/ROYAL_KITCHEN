@@ -1,0 +1,12 @@
+{
+  "name": "royalkitchen",
+  "displayName": "royalkitchen",
+  "expo": {
+    "name": "royalkitchen",
+    "slug": "royalkitchen",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
