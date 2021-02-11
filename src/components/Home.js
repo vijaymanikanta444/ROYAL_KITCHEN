@@ -57,11 +57,11 @@ export default class Home extends React.Component {
       return <View style={[styles.item, styles.itemInvisible]} />;
     }
     return (
-      <Link to="/tableOrder/:tableId" style={styles.item}>
+      <Link to={`/tableOrder/${item.key}`} style={styles.item}>
         <TouchableOpacity
         // onPress={() => Alert.alert(`TABLE - ${item.key} is selected`)}
         >
-          <Link to="/tableOrder/:tableId">
+          <Link to={`/tableOrder/${item.key}`}>
             <Text style={styles.itemText}>{item.key}</Text>
           </Link>
         </TouchableOpacity>
@@ -89,7 +89,9 @@ const styles = StyleSheet.create({
   item: {
     backgroundColor: 'black',
     alignItems: 'center',
+    // justifyContent: 'space-evenly',
     justifyContent: 'center',
+
     flex: 1,
     margin: 10,
     height: Dimensions.get('window').width / numColumns, // approximate a square

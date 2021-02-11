@@ -1,17 +1,27 @@
 import * as React from 'react';
 import { View, StyleSheet, Dimensions } from 'react-native';
+// import { FlatList } from 'react-native-gesture-handler';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
+import Favourites from './menuItems/Favourites';
+import AllItems from './menuItems/AllItems';
+import SelectedItems from './menuItems/SelectedItems';
 
 const FirstRoute = () => (
-  <View style={[styles.scene, { backgroundColor: '#566573' }]} />
+  <View style={[styles.scene, { backgroundColor: '#566573' }]}>
+    <Favourites />
+  </View>
 );
 
 const SecondRoute = () => (
-  <View style={[styles.scene, { backgroundColor: '#808B96' }]} />
+  <View style={[styles.scene, { backgroundColor: '#D5D8DC' }]}>
+    <SelectedItems />
+  </View>
 );
 
 const ThirdRoute = () => (
-  <View style={[styles.scene, { backgroundColor: '#D5D8DC' }]} />
+  <View style={[styles.scene, { backgroundColor: '#808B96' }]}>
+    <AllItems />
+  </View>
 );
 
 const initialLayout = { width: Dimensions.get('window').width };
