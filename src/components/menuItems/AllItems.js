@@ -7,26 +7,27 @@ import {
   SectionList,
   StatusBar,
 } from 'react-native';
+import { connect } from 'react-redux';
 import Counter from './Counter';
 
-const DATA = [
-  {
-    title: 'Main dishes',
-    data: ['Pizza', 'Burger', 'Risotto'],
-  },
-  {
-    title: 'Sides',
-    data: ['French Fries', 'Onion Rings', 'Fried Shrimps'],
-  },
-  {
-    title: 'Drinks',
-    data: ['Water', 'Coke', 'Beer'],
-  },
-  {
-    title: 'Desserts',
-    data: ['Cheese Cake', 'Ice Cream'],
-  },
-];
+// const DATA = [
+//   {
+//     title: 'Main dishes',
+//     data: ['Pizza', 'Burger', 'Risotto'],
+//   },
+//   {
+//     title: 'Sides',
+//     data: ['French Fries', 'Onion Rings', 'Fried Shrimps'],
+//   },
+//   {
+//     title: 'Drinks',
+//     data: ['Water', 'Coke', 'Beer'],
+//   },
+//   {
+//     title: 'Desserts',
+//     data: ['Cheese Cake', 'Ice Cream'],
+//   },
+// ];
 
 const Item = ({ title }) => (
   <View style={styles.item}>
@@ -37,10 +38,10 @@ const Item = ({ title }) => (
   </View>
 );
 
-const AllItems = () => (
+const AllItems = (props) => (
   <SafeAreaView style={styles.container}>
     <SectionList
-      sections={DATA}
+      sections={props.items}
       keyExtractor={(item, index) => item + index}
       renderItem={({ item }) => <Item title={item} />}
       renderSectionHeader={({ section: { title } }) => (
@@ -87,4 +88,11 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AllItems;
+const mapStateToProps = (state) => {
+  console.log('test98', state);
+  return {
+    items: state.items,
+  };
+};
+
+export default connect(mapStateToProps, null)(AllItems);

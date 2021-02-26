@@ -1,28 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   SafeAreaView,
   View,
+  Alert,
   FlatList,
   StyleSheet,
   Text,
   StatusBar,
+  Button,
 } from 'react-native';
+import { Input } from 'react-native-elements';
+import { connect } from 'react-redux';
+
 import Counter from './Counter';
 
-const DATA = [
-  {
-    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
-    title: 'Dum Biriyani',
-  },
-  {
-    id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-    title: 'Fry Biriyani',
-  },
-  {
-    id: '58694a0f-3da1-471f-bd96-145571e29d72',
-    title: 'Dragon chicken',
-  },
-];
+// const DATA = [
+//   {
+//     id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
+//     title: 'Dum Biriyani',
+//   },
+//   {
+//     id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
+//     title: 'Fry Biriyani',
+//   },
+//   {
+//     id: '58694a0f-3da1-471f-bd96-145571e29d72',
+//     title: 'Dragon chicken',
+//   },
+// ];
 
 const Item = ({ title }) => (
   <View style={styles.item}>
@@ -33,13 +38,42 @@ const Item = ({ title }) => (
   </View>
 );
 
-const Favourites = () => {
+const Favourites = (props) => {
   const renderItem = ({ item }) => <Item title={item.title} />;
+
+  // const [data, setData] = useState([
+  //   {
+  //     id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
+  //     title: 'Dum Biriyani',
+  //   },
+  //   {
+  //     id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
+  //     title: 'Fry Biriyani',
+  //   },
+  //   {
+  //     id: '58694a0f-3da1-471f-bd96-145571e29d72',
+  //     title: 'Dragon chicken',
+  //   },
+  // ]);
+
+  const [list, setList] = useState([]);
+  const _handlePress = () => Alert.alert('adding item');
 
   return (
     <SafeAreaView style={styles.container}>
+      {/* <View>
+        <Input placeholder="ADD NEW FAVOURITE ITEM" />
+        <Button
+          style={{ fontSize: 20, color: 'green' }}
+          styleDisabled={{ color: 'red' }}
+          onPress={_handlePress}
+          title="Add Item"
+          color="orange"
+        ></Button>
+      </View> */}
+
       <FlatList
-        data={DATA}
+        data={props.favourites}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
       />
@@ -70,4 +104,8 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Favourites;
+const mapStateToProps = (state) => ({
+  favourites: state.favourites,
+});
+
+export default connect(mapStateToProps, null)(Favourites);
