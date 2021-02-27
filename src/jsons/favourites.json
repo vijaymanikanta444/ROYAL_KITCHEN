@@ -1,0 +1,131 @@
+[
+  {
+    "id": "CDB",
+    "name": "Chicken Dhum Biriyani",
+    "type": "Biriyani",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 160
+  },
+  {
+    "id": "CFB",
+    "name": "Chicken Fry Biriyani",
+    "type": "Biriyani",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 180
+  },
+  {
+    "id": "WTB",
+    "name": "Water Bottle",
+    "type": "Beverages",
+    "category": "Beverages",
+    "veg": true,
+    "price": 20
+  },
+  {
+    "id": "DRK",
+    "name": "Cool Drink",
+    "type": "Beverages",
+    "category": "Beverages",
+    "veg": false,
+    "price": 180
+  },
+  {
+    "id": "CMB",
+    "name": "Chicken Mughalai Biriyani",
+    "type": "Biriyani",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "MMB",
+    "name": "Mix Mughalai Biriyani",
+    "type": "Biriyani",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "CKF",
+    "name": "Chicken Fried Rice",
+    "type": "FriedRice",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "VGF",
+    "name": "Veg Fried Rice",
+    "type": "FriedRice",
+    "category": "MainCourse",
+    "veg": true,
+    "price": 220
+  },
+  {
+    "id": "EGF",
+    "name": "Egg Fried Rice",
+    "type": "FriedRice",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "DRC",
+    "name": "Dragon Chicken",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "PLC",
+    "name": "Plum Chicken",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "CLC",
+    "name": "Chilly Chicken",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+
+  {
+    "id": "WNC",
+    "name": "Chicken Wings",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "BQC",
+    "name": "BBQ Chicken",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "APFS",
+    "name": "Apollo Fish",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "CLPR",
+    "name": "Chilli Prawns",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  }
+]

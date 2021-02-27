@@ -1,4 +1,5 @@
 import * as types from '../actions/types';
+import favourites from '../jsons/favourites.json';
 
 const initilState = [
   {
@@ -15,7 +16,9 @@ const initilState = [
   },
 ];
 
-export default (state = initilState, action) => {
+const data = favourites;
+
+export default (state = data, action) => {
   switch (action.type) {
     case types.ADD_FAVOURITES:
       return state;

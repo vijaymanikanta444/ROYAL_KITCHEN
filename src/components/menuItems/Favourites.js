@@ -39,7 +39,7 @@ const Item = ({ title }) => (
 );
 
 const Favourites = (props) => {
-  const renderItem = ({ item }) => <Item title={item.title} />;
+  const renderItem = ({ item }) => <Item title={item.name} />;
 
   // const [data, setData] = useState([
   //   {

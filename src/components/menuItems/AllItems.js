@@ -29,10 +29,10 @@ import Counter from './Counter';
 //   },
 // ];
 
-const Item = ({ title }) => (
+const Item = ({ item }) => (
   <View style={styles.item}>
     <View style={styles.alignment}>
-      <Text style={styles.title}>{title}</Text>
+      <Text style={styles.title}>{item.name}</Text>
       <Counter />
     </View>
   </View>
@@ -43,7 +43,7 @@ const AllItems = (props) => (
     <SectionList
       sections={props.items}
       keyExtractor={(item, index) => item + index}
-      renderItem={({ item }) => <Item title={item} />}
+      renderItem={({ item }) => <Item item={item} />}
       renderSectionHeader={({ section: { title } }) => (
         <Text style={styles.header}>{title}</Text>
       )}
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
 });
 
 const mapStateToProps = (state) => {
-  console.log('test98', state);
+  // console.log('test198', state);
   return {
     items: state.items,
   };

@@ -1,0 +1,314 @@
+[
+  {
+    "id": "CDB",
+    "name": "Chicken Dhum Biriyani",
+    "type": "Biriyani",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 160
+  },
+  {
+    "id": "CFB",
+    "name": "Chicken Fry Biriyani",
+    "type": "Biriyani",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 180
+  },
+  {
+    "id": "CMB",
+    "name": "Chicken Mughalai Biriyani",
+    "type": "Biriyani",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "CJB",
+    "name": "Chicken Joint Biriyani",
+    "type": "Biriyani",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "CBB",
+    "name": "Chucken Boneless Biriyani",
+    "type": "Biriyani",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "RCB",
+    "name": "Royal Chicken Biriyani",
+    "type": "Biriyani",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "PRB",
+    "name": "Prawns Biriyani",
+    "type": "Biriyani",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "FSB",
+    "name": "Fish Biriyani",
+    "type": "Biriyani",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "MMB",
+    "name": "Mix Mughalai Biriyani",
+    "type": "Biriyani",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "ULB",
+    "name": "Ulavacharu Biriyani",
+    "type": "Biriyani",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "CKF",
+    "name": "Chicken Fried Rice",
+    "type": "FriedRice",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "VGF",
+    "name": "Veg Fried Rice",
+    "type": "FriedRice",
+    "category": "MainCourse",
+    "veg": true,
+    "price": 220
+  },
+  {
+    "id": "SVF",
+    "name": "Veg Spl Fried Rice",
+    "type": "FriedRice",
+    "category": "MainCourse",
+    "veg": true,
+    "price": 220
+  },
+  {
+    "id": "EGF",
+    "name": "Egg Fried Rice",
+    "type": "FriedRice",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "MXF",
+    "name": "Mixed Fried Rice",
+    "type": "FriedRice",
+    "category": "MainCourse",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "PNF",
+    "name": "Panner Fried Rice",
+    "type": "FriedRice",
+    "category": "MainCourse",
+    "veg": true,
+    "price": 220
+  },
+  {
+    "id": "MSF",
+    "name": "Mushroom Fried Rice",
+    "type": "FriedRice",
+    "category": "MainCourse",
+    "veg": true,
+    "price": 220
+  },
+  {
+    "id": "DRC",
+    "name": "Dragon Chicken",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "PLC",
+    "name": "Plum Chicken",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "C65",
+    "name": "Chicken 65",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "CLC",
+    "name": "Chilly Chicken",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "BTC",
+    "name": "Butter Chicken",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "WNC",
+    "name": "Chicken Wings",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "PPC",
+    "name": "Pepper Chicken",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "KJC",
+    "name": "Kajju Chicken",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "55C",
+    "name": "Chicken 555",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "MNC",
+    "name": "Chicken Manchurian",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "GLC",
+    "name": "Garlic Chicken",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "BQC",
+    "name": "BBQ Chicken",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "APFS",
+    "name": "Apollo Fish",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "PPFS",
+    "name": "Pepper Fish",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "CLFS",
+    "name": "Chilli Fish",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "FNFS",
+    "name": "Fish Finger",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "LSPR",
+    "name": "Loose Prawns",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "CPPR",
+    "name": "Prawns Chet Patta",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "SZPR",
+    "name": "Swezawan Prawns",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "CLPR",
+    "name": "Chilli Prawns",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "PR65",
+    "name": "Prawn 65",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "id": "LSPR",
+    "name": "Loose Prawns",
+    "type": "Starter",
+    "category": "Starter",
+    "veg": false,
+    "price": 220
+  }
+]

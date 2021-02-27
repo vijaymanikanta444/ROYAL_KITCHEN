@@ -2,8 +2,10 @@ import React from 'react';
 import { View, Text, StyleSheet, Alert } from 'react-native';
 import { withRouter } from 'react-router-native';
 import { Icon, Header as NavHeader } from 'react-native-elements';
+import { connect } from 'react-redux';
+import { logout } from '../../actions/action';
 
-const Header = ({ title, history }) => {
+const Header = ({ title, history, logout }) => {
   const onPress = (data) => Alert.alert(data + ' is clicked');
 
   return (
@@ -12,7 +14,7 @@ const Header = ({ title, history }) => {
         icon: 'menu',
         color: 'orange',
         size: 34,
-        onPress: () => onPress('sidebar'),
+        onPress: () => logout(),
       }}
       centerComponent={{
         text: title,
@@ -38,4 +40,4 @@ Header.defaultProps = {
   title: 'ROYAL KITCHEN',
 };
 
-export default withRouter(Header);
+export default connect(null, { logout })(withRouter(Header));

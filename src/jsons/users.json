@@ -1,0 +1,37 @@
+[
+  {
+    "id": "R1",
+    "userName": "Harish",
+    "type": "admin"
+  },
+  {
+    "id": "R2",
+    "userName": "Vijay",
+    "type": "admin"
+  },
+  {
+    "id": "R3",
+    "userName": "Jaswant",
+    "type": "admin"
+  },
+  {
+    "id": "R4",
+    "userName": "Raju",
+    "type": "admin"
+  },
+  {
+    "id": "R5",
+    "userName": "Vasu",
+    "type": "admin"
+  },
+  {
+    "id": "R6",
+    "userName": "Reddy",
+    "type": "waiter"
+  },
+  {
+    "id": "R7",
+    "userName": "Raji",
+    "type": "waiter"
+  }
+]
